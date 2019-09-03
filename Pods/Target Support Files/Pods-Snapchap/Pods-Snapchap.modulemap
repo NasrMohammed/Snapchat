@@ -1,0 +1,6 @@
+framework module Pods_Snapchap {
+  umbrella header "Pods-Snapchap-umbrella.h"
+
+  export *
+  module * { export * }
+}

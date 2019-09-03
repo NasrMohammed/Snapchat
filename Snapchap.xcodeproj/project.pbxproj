@@ -3,25 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44F857E4475204C31C3D2E32 /* Pods_Snapchap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6613650FCFE8BABE638196E7 /* Pods_Snapchap.framework */; };
 		CC16E0E9231EB8E500E632AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0E8231EB8E500E632AD /* AppDelegate.swift */; };
-		CC16E0EB231EB8E500E632AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0EA231EB8E500E632AD /* ViewController.swift */; };
+		CC16E0EB231EB8E500E632AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0EA231EB8E500E632AD /* LoginViewController.swift */; };
 		CC16E0EE231EB8E500E632AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC16E0EC231EB8E500E632AD /* Main.storyboard */; };
 		CC16E0F0231EB8E600E632AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC16E0EF231EB8E600E632AD /* Assets.xcassets */; };
 		CC16E0F3231EB8E600E632AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC16E0F1231EB8E600E632AD /* LaunchScreen.storyboard */; };
+		CC16E0FB231EBB5800E632AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC16E0FA231EBB5800E632AD /* GoogleService-Info.plist */; };
+		CC16E0FD231F0AA800E632AD /* SnapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0FC231F0AA800E632AD /* SnapsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		357C22DD297343ADBA669841 /* Pods-Snapchap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchap.release.xcconfig"; path = "Target Support Files/Pods-Snapchap/Pods-Snapchap.release.xcconfig"; sourceTree = "<group>"; };
+		6613650FCFE8BABE638196E7 /* Pods_Snapchap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6720E606FFBBC19CF97F79 /* Pods-Snapchap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchap.debug.xcconfig"; path = "Target Support Files/Pods-Snapchap/Pods-Snapchap.debug.xcconfig"; sourceTree = "<group>"; };
 		CC16E0E5231EB8E500E632AD /* Snapchap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC16E0E8231EB8E500E632AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CC16E0EA231EB8E500E632AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC16E0EA231EB8E500E632AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CC16E0ED231EB8E500E632AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC16E0EF231EB8E600E632AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC16E0F2231EB8E600E632AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC16E0F4231EB8E600E632AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC16E0FA231EBB5800E632AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CC16E0FC231F0AA800E632AD /* SnapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F857E4475204C31C3D2E32 /* Pods_Snapchap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0233169DFA2FD32F5B50932E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6613650FCFE8BABE638196E7 /* Pods_Snapchap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC9A5096BB3F354174B90FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB6720E606FFBBC19CF97F79 /* Pods-Snapchap.debug.xcconfig */,
+				357C22DD297343ADBA669841 /* Pods-Snapchap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CC16E0DC231EB8E500E632AD = {
 			isa = PBXGroup;
 			children = (
 				CC16E0E7231EB8E500E632AD /* Snapchap */,
 				CC16E0E6231EB8E500E632AD /* Products */,
+				4EC9A5096BB3F354174B90FB /* Pods */,
+				0233169DFA2FD32F5B50932E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				CC16E0E8231EB8E500E632AD /* AppDelegate.swift */,
-				CC16E0EA231EB8E500E632AD /* ViewController.swift */,
+				CC16E0EA231EB8E500E632AD /* LoginViewController.swift */,
+				CC16E0FC231F0AA800E632AD /* SnapsTableViewController.swift */,
 				CC16E0EC231EB8E500E632AD /* Main.storyboard */,
 				CC16E0EF231EB8E600E632AD /* Assets.xcassets */,
+				CC16E0FA231EBB5800E632AD /* GoogleService-Info.plist */,
 				CC16E0F1231EB8E600E632AD /* LaunchScreen.storyboard */,
 				CC16E0F4231EB8E600E632AD /* Info.plist */,
 			);
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC16E0F7231EB8E600E632AD /* Build configuration list for PBXNativeTarget "Snapchap" */;
 			buildPhases = (
+				38FF2518E6C0D52513AC5B01 /* [CP] Check Pods Manifest.lock */,
 				CC16E0E1231EB8E500E632AD /* Sources */,
 				CC16E0E2231EB8E500E632AD /* Frameworks */,
 				CC16E0E3231EB8E500E632AD /* Resources */,
+				5D14E0A55A3E18697F9C2671 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC16E0F3231EB8E600E632AD /* LaunchScreen.storyboard in Resources */,
+				CC16E0FB231EBB5800E632AD /* GoogleService-Info.plist in Resources */,
 				CC16E0F0231EB8E600E632AD /* Assets.xcassets in Resources */,
 				CC16E0EE231EB8E500E632AD /* Main.storyboard in Resources */,
 			);
@@ -130,12 +163,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38FF2518E6C0D52513AC5B01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Snapchap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D14E0A55A3E18697F9C2671 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapchap/Pods-Snapchap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Snapchap/Pods-Snapchap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Snapchap/Pods-Snapchap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CC16E0E1231EB8E500E632AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC16E0EB231EB8E500E632AD /* ViewController.swift in Sources */,
+				CC16E0FD231F0AA800E632AD /* SnapsTableViewController.swift in Sources */,
+				CC16E0EB231EB8E500E632AD /* LoginViewController.swift in Sources */,
 				CC16E0E9231EB8E500E632AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +356,7 @@
 		};
 		CC16E0F8231EB8E600E632AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB6720E606FFBBC19CF97F79 /* Pods-Snapchap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		CC16E0F9231EB8E600E632AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 357C22DD297343ADBA669841 /* Pods-Snapchap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
