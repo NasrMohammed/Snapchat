@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44F857E4475204C31C3D2E32 /* Pods_Snapchap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6613650FCFE8BABE638196E7 /* Pods_Snapchap.framework */; };
+		CC024C87232054B900CD187D /* SelectPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024C86232054B900CD187D /* SelectPictureViewController.swift */; };
 		CC16E0E9231EB8E500E632AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0E8231EB8E500E632AD /* AppDelegate.swift */; };
 		CC16E0EB231EB8E500E632AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16E0EA231EB8E500E632AD /* LoginViewController.swift */; };
 		CC16E0EE231EB8E500E632AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC16E0EC231EB8E500E632AD /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		357C22DD297343ADBA669841 /* Pods-Snapchap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchap.release.xcconfig"; path = "Target Support Files/Pods-Snapchap/Pods-Snapchap.release.xcconfig"; sourceTree = "<group>"; };
 		6613650FCFE8BABE638196E7 /* Pods_Snapchap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6720E606FFBBC19CF97F79 /* Pods-Snapchap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchap.debug.xcconfig"; path = "Target Support Files/Pods-Snapchap/Pods-Snapchap.debug.xcconfig"; sourceTree = "<group>"; };
+		CC024C86232054B900CD187D /* SelectPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPictureViewController.swift; sourceTree = "<group>"; };
 		CC16E0E5231EB8E500E632AD /* Snapchap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC16E0E8231EB8E500E632AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC16E0EA231EB8E500E632AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				CC16E0EF231EB8E600E632AD /* Assets.xcassets */,
 				CC16E0FA231EBB5800E632AD /* GoogleService-Info.plist */,
 				CC16E0F1231EB8E600E632AD /* LaunchScreen.storyboard */,
+				CC024C86232054B900CD187D /* SelectPictureViewController.swift */,
 				CC16E0F4231EB8E600E632AD /* Info.plist */,
 			);
 			path = Snapchap;
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC16E0FD231F0AA800E632AD /* SnapsTableViewController.swift in Sources */,
+				CC024C87232054B900CD187D /* SelectPictureViewController.swift in Sources */,
 				CC16E0EB231EB8E500E632AD /* LoginViewController.swift in Sources */,
 				CC16E0E9231EB8E500E632AD /* AppDelegate.swift in Sources */,
 			);
