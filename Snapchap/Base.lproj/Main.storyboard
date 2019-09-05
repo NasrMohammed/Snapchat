@@ -175,12 +175,12 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="kSx-21-eY8">
                                 <connections>
-                                    <action selector="selectPhotoTapped:" destination="3jK-AB-Ch0" id="V2P-XU-IwV"/>
+                                    <action selector="cameraTapped:" destination="3jK-AB-Ch0" id="EZk-18-W2Y"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="organize" id="Iyn-nN-9ir">
                                 <connections>
-                                    <action selector="cameraTapped:" destination="3jK-AB-Ch0" id="4lj-fI-eJ1"/>
+                                    <action selector="selectPhotoTapped:" destination="3jK-AB-Ch0" id="Qn7-Xd-iVI"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>

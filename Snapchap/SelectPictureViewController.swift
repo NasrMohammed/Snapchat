@@ -10,6 +10,7 @@ import UIKit
 class SelectPictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var imagePicker : UIImagePickerController?
+    var imageAdded = false
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -39,7 +40,35 @@ class SelectPictureViewController: UIViewController, UIImagePickerControllerDele
         }
     }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        imagePicker?.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.image = image
+        }
+        
+        imagePicker?.dismiss(animated: true, completion: nil)
+    }
     @IBAction func nextTapped(_ sender: Any) {
+        imageAdded = true
+        if let message = messageTextField.text {
+            if imageAdded  && message != "" {
+              // segue to next view controller
+            } else {
+                // we are missing something
+                let alertVC = UIAlertController(title: "Error", message: "You must provide an immage and a message for you snap", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                    alertVC.dismiss(animated: true, completion: nil)
+                }
+                alertVC.addAction(okAction)
+                present(alertVC, animated: true, completion: nil)
+            }
+        }
+        
+        
     }
     
     /*
