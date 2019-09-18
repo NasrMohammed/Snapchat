@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class SelectPictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -56,10 +57,25 @@ class SelectPictureViewController: UIViewController, UIImagePickerControllerDele
         imageAdded = true
         if let message = messageTextField.text {
             if imageAdded  && message != "" {
+             
+              // upload the image
+                let imagesFolder = Storage.storage().reference().child("images")
+                if let image = imageView.image {
+                    if let imageData = image.jpegData(compressionQuality: 0.1) {
+                        imagesFolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil) { (metadata, error) in
+                            if let error  error {
+                                
+                            }
+                        }
+                    }
+
+                }
+
+                
               // segue to next view controller
             } else {
                 // we are missing something
-                let alertVC = UIAlertController(title: "Error", message: "You must provide an immage and a message for you snap", preferredStyle: .alert)
+                let alertVC = UIAlertController(title: "Error", message: "You must provide an image and a message for your snap", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
                     alertVC.dismiss(animated: true, completion: nil)
                 }
@@ -69,6 +85,15 @@ class SelectPictureViewController: UIViewController, UIImagePickerControllerDele
         }
         
         
+    }
+    
+    func presentAlert(alert:String) {
+        let alertVC = UIAlertController(title: "Error", message: alert, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
+            alertVC.dismiss(animated: true, completion: nil)
+        }
+        alertVC.addAction(okAction)
+        present(alertVC, animated: true, completion: nil)
     }
     
     /*
